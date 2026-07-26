@@ -42,6 +42,9 @@
     <Compile Include="Day_2\Controls_if_elseIf_5.cs" />
     <Compile Include="Day_2\Controls_If_else_4.cs" />
     <Compile Include="Day_2\Controls_switch_6.cs" />
+    <Compile Include="Day_3\Array\Array_9.cs" />
+    <Compile Include="Day_3\Array\StringArray_8.cs" />
+    <Compile Include="Day_3\First_DAsh_7.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
