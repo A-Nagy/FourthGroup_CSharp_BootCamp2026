@@ -47,6 +47,11 @@
     <Compile Include="Day_3\First_DAsh_7.cs" />
     <Compile Include="Day_4\DashBoard_Update_11.cs" />
     <Compile Include="Day_4\Loops_10.cs" />
+    <Compile Include="Day_5\Function_P3\RunMain.cs" />
+    <Compile Include="Day_5\Function_P3\Show_Diffrence_.cs" />
+    <Compile Include="Day_5\Function_Void_P1\Functions_12.cs" />
+    <Compile Include="Day_5\Function_Void_P2\AllFuctions_14.cs" />
+    <Compile Include="Day_5\Function_Void_P2\NewMain_13.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
