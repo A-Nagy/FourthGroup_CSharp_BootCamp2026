@@ -52,6 +52,12 @@
     <Compile Include="Day_5\Function_Void_P1\Functions_12.cs" />
     <Compile Include="Day_5\Function_Void_P2\AllFuctions_14.cs" />
     <Compile Include="Day_5\Function_Void_P2\NewMain_13.cs" />
+    <Compile Include="Day_6\FirstCalc\Calc_In_main.cs" />
+    <Compile Include="Day_6\SacendCalc\CalcInSameClass.cs" />
+    <Compile Include="Day_6\ThirdCalc\AllFunctionsClass.cs" />
+    <Compile Include="Day_6\ThirdCalc\TheMainClass.cs" />
+    <Compile Include="Day_6\Z_ReturnArray\MainClass_15.cs" />
+    <Compile Include="Day_6\Z_ReturnArray\ReturnAllary_15.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
