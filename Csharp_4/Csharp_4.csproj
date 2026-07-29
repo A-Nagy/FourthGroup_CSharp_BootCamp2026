@@ -58,6 +58,10 @@
     <Compile Include="Day_6\ThirdCalc\TheMainClass.cs" />
     <Compile Include="Day_6\Z_ReturnArray\MainClass_15.cs" />
     <Compile Include="Day_6\Z_ReturnArray\ReturnAllary_15.cs" />
+    <Compile Include="Day_7\ExplainUsing_IF_16 .cs" />
+    <Compile Include="Day_7\LastVersionOfDashBoard\AllFunctions.cs" />
+    <Compile Include="Day_7\LastVersionOfDashBoard\EmployeeClass.cs" />
+    <Compile Include="Day_7\LastVersionOfDashBoard\MainClassForDashbord.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

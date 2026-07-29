@@ -57,7 +57,7 @@ namespace Csharp_4.Day_6.SacendCalc
         //}
 
 
-        static double Static_Add( double Num1,double Num2)
+     public   static double Static_Add( double Num1,double Num2)
         {
             return Num1 + Num2;
         }
