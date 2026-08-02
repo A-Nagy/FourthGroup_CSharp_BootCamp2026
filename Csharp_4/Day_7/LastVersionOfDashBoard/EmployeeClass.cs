@@ -8,20 +8,22 @@ namespace Csharp_4.Day_7.LastVersionOfDashBoard
 {
      class EmployeeClass
     {
-        public void Emp_Label() 
+        public  void Emp_Label() 
         {
             Console.WriteLine("=================================");
             Console.WriteLine("   Employee Salary Information   ");
             Console.WriteLine("=================================");
         }
-        //public void InputData() 
-        //{
-        //    Console.Write("Enter your name: ");
-        //    string Name = Console.ReadLine();
-        //    Console.Write("Enter your monthly salary: ");
-        //    double Salary = Convert.ToDouble(Console.ReadLine());
+        public  object[] InputData()
+        {
+            Console.Write("Enter Employee name ");
+            string Name = Console.ReadLine();
 
-        //}
+            Console.Write("Enter Employee monthly salary: ");
+            double Salary = Convert.ToDouble(Console.ReadLine());
+
+            return new object[] {Name, Salary};
+        }
         public  double GetAnnualSalary(double monthlySalary)
         {
             return monthlySalary * 12;
@@ -50,7 +52,7 @@ namespace Csharp_4.Day_7.LastVersionOfDashBoard
         public  string[] GetEmployeeSummary(string Emp_name, double MonthelySalary)
         {
             double aSalary = GetAnnualSalary(MonthelySalary);
-            string sLevel = GetSalaryLevel(MonthelySalary);
+            string sLevel  = GetSalaryLevel(MonthelySalary);
 
 
             return new string[] { "Employee Name:  " +   Emp_name      ,
@@ -59,5 +61,13 @@ namespace Csharp_4.Day_7.LastVersionOfDashBoard
                                 "Salary Level :  " +   sLevel         };
 
         }
+        public  void PrintEmployeeSummary(string[] summary)
+        {
+            foreach (string s in summary)
+            {
+                Console.WriteLine(s);
+            }
+        }
+
+        }
     }
-}

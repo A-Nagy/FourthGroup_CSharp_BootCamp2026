@@ -62,6 +62,16 @@
     <Compile Include="Day_7\LastVersionOfDashBoard\AllFunctions.cs" />
     <Compile Include="Day_7\LastVersionOfDashBoard\EmployeeClass.cs" />
     <Compile Include="Day_7\LastVersionOfDashBoard\MainClassForDashbord.cs" />
+    <Compile Include="Day_7\LastVersionOfDashBoard\PatientClass.cs" />
+    <Compile Include="Day_7\LastVersionOfDashBoard\StudentClass.cs" />
+    <Compile Include="Day_8\Employee_18\Employees.cs" />
+    <Compile Include="Day_8\Employee_18\TestEmployee.cs" />
+    <Compile Include="Day_8\Patient_20\Patients.cs" />
+    <Compile Include="Day_8\Patient_20\TestPatient.cs" />
+    <Compile Include="Day_8\Room_17\Rooms.cs" />
+    <Compile Include="Day_8\Room_17\TestRoom.cs" />
+    <Compile Include="Day_8\Student_19\Students.cs" />
+    <Compile Include="Day_8\Student_19\TestStudent.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
