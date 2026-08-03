@@ -10,13 +10,13 @@ namespace Csharp_4.Day_8.Employee_18
     {
         //static void Main(string[] args)
         //{
-        //    Employees emp = new Employees();
+        //    Employees emp = new Employees("Ahmad", 2000);
 
-        //    emp._name = "Hassan";
-        //    emp._salary = 10000;
+        //    emp.Name ="";
+        //    emp.Salary = 10000;
 
-        //    Console.WriteLine("Employee Name: " + emp._name);
-        //    Console.WriteLine("Employee Salary: " + emp._salary);
+        //    Console.WriteLine("Employee Name: " + emp.Name);
+        //    Console.WriteLine("Employee Salary: " + emp.Salary);
         //    Console.WriteLine("Employee Annual Salary: " + emp.CalculateAnnualSalary());
         //    Console.WriteLine("Employee Annual Salary Level: " + emp.GetAnnualSalaryLevel());
 

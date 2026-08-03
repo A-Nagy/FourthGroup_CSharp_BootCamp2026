@@ -18,14 +18,32 @@ namespace Csharp_4.Day_8.Employee_18
     
          */
         //fields
-        public string _name;
-        public double _salary;
+         string _name;
+         double _salary;
+
+        public string Name 
+        {
+            get { return _name; }
+            set { _name = value.Equals("")?"No Name":value  ; }
+        }
+        public double Salary 
+        {
+            get { return _salary; }
+            set { _salary = value<=2000?2500:value ; }
+        }
+
+        public Employees(string name , double salary ) 
+        {
+            Name   = name   ;
+            Salary = salary ;
+
+        }
 
         //functions
         // ✅ الطريقة الثانية: تعتمد على الخصائص الداخلية للكائن
         public double CalculateAnnualSalary()
         {
-            return _salary * 12;
+            return Salary * 12;
         }
         public string GetAnnualSalaryLevel()
         {
@@ -47,21 +65,21 @@ namespace Csharp_4.Day_8.Employee_18
 
 
         // ✅ الطريقة الاولي: تعتمد على قيمة تمرر لها (parameter)
-        public string GetAnnualSalaryLevel(double annualSalary)
-        {
-            if (annualSalary < 50000)
-            {
-                return "Low";
-            }
-            else if (annualSalary >= 50000 && annualSalary < 100000)
-            {
-                return "Medium";
-            }
-            else
-            {
-                return "High";
-            }
-        }
+        //public string GetAnnualSalaryLevel(double annualSalary)
+        //{
+        //    if (annualSalary < 50000)
+        //    {
+        //        return "Low";
+        //    }
+        //    else if (annualSalary >= 50000 && annualSalary < 100000)
+        //    {
+        //        return "Medium";
+        //    }
+        //    else
+        //    {
+        //        return "High";
+        //    }
+        //}
 
     }
 }

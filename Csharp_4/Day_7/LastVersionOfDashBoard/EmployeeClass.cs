@@ -24,11 +24,11 @@ namespace Csharp_4.Day_7.LastVersionOfDashBoard
 
             return new object[] {Name, Salary};
         }
-        public  double GetAnnualSalary(double monthlySalary)
+          double GetAnnualSalary(double monthlySalary)
         {
             return monthlySalary * 12;
         }
-        public  string GetSalaryLevel(double monthlySalary)
+          string GetSalaryLevel(double monthlySalary)
         {
 
             if (monthlySalary >= 15000)
