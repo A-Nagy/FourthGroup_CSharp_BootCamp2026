@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_4.Day_8.Student_19
 {
-     class Students
+     class Students : Person
     {
         /*
          * **Student**
@@ -15,15 +15,8 @@ namespace Csharp_4.Day_8.Student_19
       - `GetPercentage()` → calculates result percentage
       - `GetGrade()` → returns grade based on percentage
          */
-        private string name;
-        private double mark;
-        private double fullmark;
-
-        public string Name 
-        { 
-            get => name;
-            set => name = value;
-        }
+         private double mark;
+         private double fullmark; 
         public double Mark 
         {
             get => mark;
@@ -36,14 +29,13 @@ namespace Csharp_4.Day_8.Student_19
         }
 
         public Students(string name , double mark , double fullmark )
+            : base( name )
         {
-            Name = name;
+           
             Mark = mark;
             Fullmark = fullmark;
             
         }
-
-
         public double GetPrecentage() 
         {
             return (Mark /Fullmark)*100;
@@ -57,5 +49,13 @@ namespace Csharp_4.Day_8.Student_19
                    precentage >= 60 ? "D" : "F";
         }
 
+        public override string PrintAllData()
+        {
+            return $"Student name is {Name} \n" +
+                   $"Student Mark is {Mark} \n" +
+                   $"Student Precentage is {GetPrecentage()} \n" +
+                   $"Student Grade is {GetGrade()}";
+
+        }
     }
 }

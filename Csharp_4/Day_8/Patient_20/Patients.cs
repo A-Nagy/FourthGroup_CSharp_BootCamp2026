@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_4.Day_8.Patient_20
 {
-     class Patients
+     class Patients : Person
     {
         /*
          * . **Patient**
@@ -16,22 +16,21 @@ namespace Csharp_4.Day_8.Patient_20
               - `GetBodyStatus()` → returns weight classification
          */
 
-        private string name;
         private double height;
         private double weight;
 
-        public string Name { get => name; set => name = value; }
-        public double Height { get => height; set => height = value; }
+         public double Height { get => height; set => height = value; }
         public double Weight { get => weight; set => weight = value; }
 
         public Patients(string name , double height, double weight)
+            : base(name)
         {
-            Name = name;
+        
             Height = height;
             Weight = weight;
             
         }
-       public double GEtBMI() 
+        public double GEtBMI() 
         {
             return Weight / (  Height * Height );
         }
@@ -44,6 +43,13 @@ namespace Csharp_4.Day_8.Patient_20
  
         }
 
+        public override string PrintAllData()
+        {
+            return $"Patient name is {Name} \n" +
+                   $"Patient Height is {Height} \n" +
+                   $"Patient Weight is {Weight} \n" +
+                   $"Patient BMI is {GEtBMI()}";
 
+        }
     }
 }

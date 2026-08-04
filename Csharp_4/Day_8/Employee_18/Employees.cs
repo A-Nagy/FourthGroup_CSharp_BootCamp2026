@@ -20,6 +20,7 @@ namespace Csharp_4.Day_8.Employee_18
         //fields
          string _name;
          double _salary;
+        
 
         public string Name 
         {
@@ -62,7 +63,14 @@ namespace Csharp_4.Day_8.Employee_18
                 return "High";
             }
         }
-
+       
+        
+        
+        
+        public virtual double GetNetSalary() 
+        {
+            return Salary; 
+        }
 
         // ✅ الطريقة الاولي: تعتمد على قيمة تمرر لها (parameter)
         //public string GetAnnualSalaryLevel(double annualSalary)
@@ -83,3 +91,4 @@ namespace Csharp_4.Day_8.Employee_18
 
     }
 }
+ 
