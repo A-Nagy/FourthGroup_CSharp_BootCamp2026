@@ -6,16 +6,8 @@ using System.Threading.Tasks;
 
 namespace Csharp_4.Day_8.Patient_20
 {
-     class Patients : Person
+     class Patients : Person,IPrintable
     {
-        /*
-         * . **Patient**
-              - Properties: `Name`, `Height`, `Weight`
-             - Functions:
-              - `GetBMI()` → calculates Body Mass Index
-              - `GetBodyStatus()` → returns weight classification
-         */
-
         private double height;
         private double weight;
 
@@ -50,6 +42,14 @@ namespace Csharp_4.Day_8.Patient_20
                    $"Patient Weight is {Weight} \n" +
                    $"Patient BMI is {GEtBMI()}";
 
+        }
+
+        public void PrintDetails()
+        {
+            Console.WriteLine( $"Patient name is {Name} \n" +
+                               $"Patient Height is {Height} \n" +
+                               $"Patient Weight is {Weight} \n" +
+                               $"Patient BMI is {GEtBMI()}");
         }
     }
 }

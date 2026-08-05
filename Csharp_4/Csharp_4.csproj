@@ -69,6 +69,10 @@
     <Compile Include="Day_8\Employee_18\Employees.cs" />
     <Compile Include="Day_8\Employee_18\Manager.cs" />
     <Compile Include="Day_8\Employee_18\TestEmployee.cs" />
+    <Compile Include="Day_8\Explain_Abstract_21\Circle.cs" />
+    <Compile Include="Day_8\Explain_Abstract_21\Rectangle.cs" />
+    <Compile Include="Day_8\Explain_Abstract_21\Shape.cs" />
+    <Compile Include="Day_8\IPrintable.cs" />
     <Compile Include="Day_8\Patient_20\Patients.cs" />
     <Compile Include="Day_8\Patient_20\TestPatient.cs" />
     <Compile Include="Day_8\Person.cs" />
@@ -76,6 +80,7 @@
     <Compile Include="Day_8\Room_17\TestRoom.cs" />
     <Compile Include="Day_8\Student_19\Students.cs" />
     <Compile Include="Day_8\Student_19\TestStudent.cs" />
+    <Compile Include="Day_8\Task1_EmployeeSystem\TestTask1.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,36 +6,22 @@ using System.Threading.Tasks;
 
 namespace Csharp_4.Day_8.Employee_18
 {
-     class Employees
+     class Employees :Person , IPrintable
     {
-        /*
-         * **Employee**
-         - Properties: `Name`, `Salary`
-         - Functions:
-          - `CalculateAnnualSalary()` → returns yearly salary
-          - `GetAnnualSalaryLevel(double annualSalary)` → same but receives salary as a parameter
-          - `GetAnnualSalaryLevel()` → returns salary level based on computed annual salary
-    
-         */
+        
         //fields
-         string _name;
+        
          double _salary;
         
-
-        public string Name 
-        {
-            get { return _name; }
-            set { _name = value.Equals("")?"No Name":value  ; }
-        }
         public double Salary 
         {
             get { return _salary; }
             set { _salary = value<=2000?2500:value ; }
         }
 
-        public Employees(string name , double salary ) 
+        public Employees(string name , double salary ) : base(name)
         {
-            Name   = name   ;
+        
             Salary = salary ;
 
         }
@@ -64,12 +50,27 @@ namespace Csharp_4.Day_8.Employee_18
             }
         }
        
-        
-        
-        
         public virtual double GetNetSalary() 
         {
             return Salary; 
+        }
+
+        public override string PrintAllData()
+        {
+
+            return $"Employee name is {Name} \n" +
+                   $"Employee Salary is {GetNetSalary()} \n" +
+                   $"Employee Annual Salary is {CalculateAnnualSalary()} \n" +
+                   $"Employee Annual Salary Level is {GetAnnualSalaryLevel()}";
+
+        }
+
+        public void PrintDetails()
+        {
+            Console.WriteLine($"Employee name is {Name} \n" +
+                   $"Employee Salary is {GetNetSalary()} \n" +
+                   $"Employee Annual Salary is {CalculateAnnualSalary()} \n" +
+                   $"Employee Annual Salary Level is {GetAnnualSalaryLevel()}");
         }
 
         // ✅ الطريقة الاولي: تعتمد على قيمة تمرر لها (parameter)

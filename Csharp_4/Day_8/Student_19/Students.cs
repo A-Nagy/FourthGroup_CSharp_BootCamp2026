@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace Csharp_4.Day_8.Student_19
 {
-     class Students : Person
+     class Students : Person , IPrintable
     {
-        /*
-         * **Student**
-      - Properties: `Name`, `Mark`, `FullMark`
-      - Functions: 
-      - `GetPercentage()` → calculates result percentage
-      - `GetGrade()` → returns grade based on percentage
-         */
          private double mark;
          private double fullmark; 
         public double Mark 
@@ -56,6 +49,14 @@ namespace Csharp_4.Day_8.Student_19
                    $"Student Precentage is {GetPrecentage()} \n" +
                    $"Student Grade is {GetGrade()}";
 
+        }
+
+        public void PrintDetails()
+        {
+            Console.WriteLine($"Student name is {Name} \n" +
+                   $"Student Mark is {Mark} \n" +
+                   $"Student Precentage is {GetPrecentage()} \n" +
+                   $"Student Grade is {GetGrade()}");
         }
     }
 }
